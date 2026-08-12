@@ -1,0 +1,23 @@
+package com.mvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+	
+	
+	@RequestMapping("/edata")
+	public String dispMessage()
+	{
+		return "studentPage";
+	}
+	
+	
+	@RequestMapping("/**")
+	public String errorPage()
+	{
+		return "errorPage";
+	}
+}

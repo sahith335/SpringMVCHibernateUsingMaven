@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mvc</groupId>
+  <artifactId>SpringMVC</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.7.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.7.1</version>
+      <scope>test</scope>
+    </dependency>
+	
+	<!-- Source: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+	<dependency>
+	    <groupId>com.mysql</groupId>
+	    <artifactId>mysql-connector-j</artifactId>
+	    <version>8.3.0</version>
+	    <scope>compile</scope>
+	</dependency>
+	
+	
+	
+	<!-- Source: https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+	<dependency>
+	    <groupId>org.hibernate.javax.persistence</groupId>
+	    <artifactId>hibernate-jpa-2.1-api</artifactId>
+	    <version>1.0.2.Final</version>
+	    <scope>compile</scope>
+	</dependency>
+    
+    <!-- it is only used for Tomcat 9 version with that we have to use Spring 5, Hibernate 5 version only -->
+    
+    <!-- <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+	</dependency> -->
+	
+	
+	<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>6.0.0</version>
+    <scope>provided</scope>
+	</dependency>
+	
+	<!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>6.2.18</version>
+    <scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>6.2.18</version>
+    <scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>6.2.18</version>
+    <scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>6.2.18</version>
+    <scope>compile</scope>
+</dependency>
+
+
+<!-- Source: https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate.orm</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.5.2.Final</version>
+    <scope>compile</scope>
+</dependency>
+    
+  </dependencies>
+  
+  
+  <build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.13.0</version>
+            <configuration>
+                <source>21</source>
+                <target>21</target>
+                <parameters>true</parameters>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+  
+  
+</project>
